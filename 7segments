@@ -1,4 +1,4 @@
-#include "Adafruit_LEDBackpack.h"           //¶óÀÌºê·¯¸®´Â Ã·ºÎ
+#include "Adafruit_LEDBackpack.h"          
 #include "Adafruit_GFX.h"
 
 Adafruit_7segment matrix = Adafruit_7segment();
