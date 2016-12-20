@@ -1,17 +1,16 @@
-int motorPin = 14;
-
+int motorPin1 = 1;
+int motorPin2 = 2;
+int motorPin3 = 3;
 void setup() 
 
 { 
-  pinMode(motorPin, OUTPUT);
-  Serial.begin(9600);
+  pinMode(motorPin1, OUTPUT);
+  pinMode(motorPin2, OUTPUT);
+  pinMode(motorPin3, OUTPUT);
 } 
 void loop() 
 { 
-  for(int i=0 ; i<255 ; i+=10){
-    analogWrite(motorPin, i);
-    Serial.print(i);
-    delay(1000);
-  }
-  analogWrite(motorPin, 0);
+  analogWrite(motorPin1, 128);
+  analogWrite(motorPin2, 128);
+  analogWrite(motorPin3, 128);
 } 
